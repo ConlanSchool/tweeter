@@ -1,0 +1,32 @@
+.new-tweet {
+  background-color:#f4f1ec;
+  
+  width: 100%;
+
+  
+  
+}
+
+.new-tweet > form > #tweet-text {
+  width: 100%;
+  background: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: solid;
+  text-align:bottom;
+}
+
+.new-tweet > form > div {
+  font-family: bungee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet > form > div > button{
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	color: #f4f1ec;
+  background-color: #4056A1;
+}
