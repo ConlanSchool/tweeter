@@ -1,11 +1,16 @@
-.new-tweet {
+.container {
+  margin-top: 2em;
+  margin-right: 4em;
+  margin-left: 4em;
   background-color:#f4f1ec;
-  
-  width: 100%;
+  width: auto;
 
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   
 }
+
 
 .new-tweet > form > #tweet-text {
   width: 100%;
@@ -29,4 +34,54 @@
 	cursor: pointer;
 	color: #f4f1ec;
   background-color: #4056A1;
+}
+
+
+
+
+
+.posted-tweet {
+  display: flex;
+  border: solid;
+  padding: 0.5em;
+  
+}
+
+
+.posted-tweet > article {
+  width: 100%;
+}
+
+.posted-tweet > article > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.posted-tweet > article > header > img {
+  max-width: 10%;
+}
+
+
+.posted-tweet > article > header > h4 {
+  margin-left: auto;
+}
+
+
+.posted-tweet > article > p {
+  display:flex;
+}
+
+
+.posted-tweet > article > footer {
+  border-top: solid;
+  padding-top: 0.5em;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.posted-tweet > article > footer > icons {
+  margin-left: auto;
 }
