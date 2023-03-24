@@ -1,18 +1,17 @@
 .main-header {
- 
+
   margin-top: 120px;
   height: 400px;
   width: 100%;
 
-  background-color:#48C9B0;
+  background-color: #e39323;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  
-  
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 
 }
-
