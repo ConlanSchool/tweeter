@@ -12,11 +12,9 @@
 }
 
 .container > .tweets-container{
-
   display: flex;
   flex-direction: column;
   gap: 2em;
-  
 }
 
 
@@ -58,6 +56,11 @@
 
 .posted-tweet > article {
   width: 100%;
+}
+
+.posted-tweet > article > p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .posted-tweet > article > header {

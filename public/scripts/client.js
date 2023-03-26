@@ -68,18 +68,26 @@ $(document).ready(function () {
     event.preventDefault();
 
     const formData = $(this).serialize();
+    const tweetContent = formData.split("=")[1];
 
-    $.ajax({
-      url: "/tweets",
-      method: "POST",
-      data: formData,
-    })
-      .then(function (response) {
-        console.log(response);
+    if (tweetContent.trim() === "") {
+      alert("Tweets can not be empty.");
+    } else if (tweetContent.length > 140) {
+      alert("Tweet is over character limit.");
+    } else {
+      $.ajax({
+        url: "/tweets",
+        method: "POST",
+        data: formData,
       })
-      .catch(function (error) {
-        console.log(error);
-      });
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+          alert("An error occurred while submitting the form.");
+        });
+    }
   });
 
   $(function () {
