@@ -1,14 +1,12 @@
 .container {
-  margin-top: 2em;
-  margin-right: 4em;
-  margin-left: 4em;
-  background-color:#f4f1ec;
-  width: auto;
-
+  background-color: #f4f1ec;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  
+  margin-top: 2em;
+  margin-right: 4em;
+  margin-left: 4em;
+  width: auto;
 }
 
 .container > .tweets-container{
@@ -58,10 +56,7 @@
   width: 100%;
 }
 
-.posted-tweet > article > p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
+
 
 .posted-tweet > article > header {
   display: flex;
@@ -81,7 +76,7 @@
 
 
 .posted-tweet > article > p {
-  display:flex;
+  word-wrap: break-word;
 }
 
 
