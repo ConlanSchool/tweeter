@@ -15,7 +15,6 @@
   gap: 2em;
 }
 
-
 .new-tweet > form > #tweet-text {
   width: 100%;
   background: transparent;
@@ -42,8 +41,6 @@
 
 
 
-
-
 .posted-tweet {
   display: flex;
   border: solid;
@@ -51,12 +48,9 @@
   
 }
 
-
 .posted-tweet > article {
   width: 100%;
 }
-
-
 
 .posted-tweet > article > header {
   display: flex;
@@ -64,21 +58,17 @@
   justify-content: space-between;
 }
 
-
 .posted-tweet > article > header > img {
   max-width: 10%;
 }
-
 
 .posted-tweet > article > header > h4 {
   margin-left: auto;
 }
 
-
 .posted-tweet > article > p {
   word-wrap: break-word;
 }
-
 
 .posted-tweet > article > footer {
   border-top: solid;
