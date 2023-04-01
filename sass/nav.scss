@@ -15,7 +15,11 @@ nav {
     font-family: bungee;
   }
 
-  > h2 {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
     margin-left: auto;
   }
 }
