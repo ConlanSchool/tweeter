@@ -9,4 +9,9 @@ $(document).ready(function () {
       $(".new-tweet form .counter").css("color", "");
     }
   });
+
+  $(".new-tweet form").on("submit", function (event) {
+    $(".new-tweet form .counter").text(140);
+    $(".new-tweet form .counter").css("color", "");
+  });
 });

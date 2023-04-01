@@ -2,19 +2,37 @@
   background-color: #f4f1ec;
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  margin-top: 2em;
-  margin-right: 4em;
-  margin-left: 4em;
-  width: auto;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
 }
-
-.container > .tweets-container{
+.container > .tweets-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 
+.error-container {
+  padding: 2rem;
+}
+.error-container .ERROR {
+  background-color: #ff6961;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.new-tweet > form {
+  flex-grow: 1;
+  margin: 0;
+  padding: 2rem;
+}
 .new-tweet > form > #tweet-text {
   width: 100%;
   background: transparent;
@@ -22,62 +40,49 @@
   border: none;
   outline: none;
   border-bottom: solid;
-  text-align:bottom;
+  text-align: bottom;
 }
-
 .new-tweet > form > div {
   font-family: bungee;
   display: flex;
   justify-content: space-between;
 }
-
-.new-tweet > form > div > button{
-	border: none;
-	font: inherit;
-	cursor: pointer;
-	color: #f4f1ec;
+.new-tweet > form > div > button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: #f4f1ec;
   background-color: #4056A1;
 }
-
-
 
 .posted-tweet {
   display: flex;
   border: solid;
   padding: 0.5em;
-  
 }
-
 .posted-tweet > article {
   width: 100%;
 }
-
 .posted-tweet > article > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .posted-tweet > article > header > img {
   max-width: 10%;
 }
-
 .posted-tweet > article > header > h4 {
   margin-left: auto;
 }
-
 .posted-tweet > article > p {
   word-wrap: break-word;
 }
-
 .posted-tweet > article > footer {
   border-top: solid;
   padding-top: 0.5em;
-
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-
 .posted-tweet > article > footer > icons {
   margin-left: auto;
 }

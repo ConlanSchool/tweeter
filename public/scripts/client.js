@@ -35,7 +35,7 @@ $(document).ready(function () {
             <h4>${tweet.user.handle}</h4>
           </header>
           <p>
-            ${tweet.content.text}
+          ${document.createTextNode(tweet.content.text).textContent}
           </p>
           <footer>
             ${timeago.format(tweet.created_at)}
@@ -71,11 +71,14 @@ $(document).ready(function () {
 
     const formData = $(this).serialize();
     const tweetContent = formData.split("=")[1];
+    const errorMsg = $(".ERROR");
 
     if (tweetContent.trim() === "") {
-      alert("Tweets can not be empty.");
+      errorMsg.text("Tweet can not be empty.");
+      errorMsg.css("display", "block");
     } else if (tweetContent.length > 140) {
-      alert("Tweet is over character limit.");
+      errorMsg.text("Tweet is over character limit.");
+      errorMsg.css("display", "block");
     } else {
       $.ajax({
         url: "/tweets",
@@ -87,10 +90,15 @@ $(document).ready(function () {
 
           // clear the tweet input field
           $("textarea").val("");
+
+          // hide the error messages
+          errorMsg.css("display", "none");
         })
         .catch(function (error) {
           console.log(error);
-          alert("An error occurred while submitting the form.");
+
+          errorMsg.text("An error occurred while submitting the form.");
+          errorMsg.css("display", "block");
         });
     }
   });

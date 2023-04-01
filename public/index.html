@@ -38,20 +38,23 @@
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
+
     <header class="main-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Conlan Schafer</h2>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      
       <section class="new-tweet">
+        <div class="error-container">
+          <div class="ERROR" style="display: none;"></div>
+        </div>
         <form action="/tweets/" method="POST">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
@@ -60,10 +63,7 @@
           </div>
         </form>
       </section>
-
-      <section class="tweets-container">
-      </section>
-
+      <section class="tweets-container"></section>
     </main>
   </body>
 </html>

@@ -6,26 +6,35 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-
-
 /*
  * Global layout stuff
  */
-
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-main {
-  width: 90%;
-  margin: 0 auto; 
-  background-color: #f4f1ec; 
+/* Responsive design */
+@media (min-width: 1024px) {
+  body > header {
+    width: 100%;
+  }
+  body > .container {
+    margin-top: 10rem;
+    width: 100%;
+  }
 }
