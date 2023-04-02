@@ -1,6 +1,8 @@
 # Tweeter
 
-Tweeter is a simple Twitter clone created by Lighthouse Labs as part of their web bootcamp program. This project is intended to help students learn front-end development skills by building a basic page.
+Tweeter is a simple Twitter clone. This project is for learning basic front-end development skills.
+
+![Alt Text](https://i.imgur.com/dqG8NG8.gif)
 
 ## Getting Started
 
@@ -22,11 +24,21 @@ This will start the server on port 8080. You can access Tweeter by visiting http
 
 ## Dependencies
 
-Tweeter depends on the following Node.js packages:
+- Node
+- Express
 
-body-parser: Parses incoming request bodies in a middleware before handlers, available under the req.body property.
-chance: Generates random strings for testing purposes.
-express: A fast, unopinionated, minimalist web framework for Node.js.
-md5: A JavaScript function for hashing messages with MD5.
-License
-Tweeter is licensed under the ISC license. See the LICENSE file for more information.
+## Usage
+
+1. Navigate to `http://localhost:8080/` after following the getting started setup.
+2. Type your tweet in the "Compose Tweet" section and click "Tweet" to post it.
+3. Your tweet will be displayed on the page along with other tweets.
+
+### Credit
+
+Tweeter was created by Lighthouse Labs for educational purposes.
+
+The client-side JavaScript code can be found on GitHub at: https://github.com/lighthouse-labs/tweeter
+
+### License
+
+This project is licensed under the ISC License.
