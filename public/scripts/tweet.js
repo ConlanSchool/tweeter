@@ -1,3 +1,4 @@
+//style and color css for posted tweets
 $(document).ready(function () {
   $(document).on("mouseenter", ".posted-tweet", function () {
     $(this).css("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.5)");

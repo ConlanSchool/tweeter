@@ -1,10 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-// app.post("/tweets")
+//This function will be called on page load and will render all tweets
 $(document).ready(function () {
   const renderTweets = function (arrOfTweets) {
     //Clear feed on refresh or initial load
@@ -21,6 +15,7 @@ $(document).ready(function () {
 
   //Formats tweet data into html
   const createTweetElement = function (tweet) {
+    //checks for valid tweet data
     if (!tweet.user || !tweet.user.avatars) {
       console.error("Invalid tweet object:", tweet);
       return null;
@@ -51,6 +46,7 @@ $(document).ready(function () {
     return $tweet;
   };
 
+  //Makes a GET request to the server to get the latest tweets
   const loadNewTweet = function () {
     $.ajax({
       url: "/tweets",
@@ -66,6 +62,7 @@ $(document).ready(function () {
       });
   };
 
+  //This function is called when the tweet form is submitted
   $("form").submit(function (event) {
     event.preventDefault();
 
@@ -96,7 +93,6 @@ $(document).ready(function () {
         })
         .catch(function (error) {
           console.log(error);
-
           errorMsg.text("An error occurred while submitting the form.");
           errorMsg.css("display", "block");
         });
